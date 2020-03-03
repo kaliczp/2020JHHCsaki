@@ -3,7 +3,7 @@
 Zala_ET = read.csv2("Zala_reszviz_ET.csv",sep = ";", header=FALSE, dec=".")
 ##az elso 4 sor az elso idoszak a 4 tájra, stb.
 ##beta-redukalt eredmenyek!
-jpeg("Zala_ET.jpg",16,7,units="cm",res=600,pointsize = 8)
+jpeg("Zala_ET.jpg",16,7,units="cm",res=1000,pointsize = 8)
 par(mar=c(3,4.1,1.1,1.1))
 boxplot(t(Zala_ET), #names=c(" ","2011-2040"," "," ","2041-2070"," "," ","2071-2100"," "),
         ylab="ET-change [%]",boxwex=0.5,
@@ -33,7 +33,7 @@ dev.off()
 Zala_R = read.csv2("Zala_reszviz_R.csv",sep = ";", header=FALSE, dec=".")
 ##az elso 4 sor az elso idoszak a 4 tájra, stb.
 ##beta-redukalt eredmenyek!
-jpeg("Zala_R.jpg",16,7,units="cm",res=600,pointsize = 8)
+jpeg("Zala_R.jpg",16,7,units="cm",res=1000,pointsize = 8)
 par(mar=c(3,4.1,1.1,1.1))
 boxplot(t(Zala_R), #names=c(" ","2011-2040"," "," ","2041-2070"," "," ","2071-2100"," "),
         ylab="R-change [%]",boxwex=0.5,
